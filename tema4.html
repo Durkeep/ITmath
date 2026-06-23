@@ -20,13 +20,60 @@
 </nav>
 <div class="page-header">
   <h1>Тема 4</h1>
-  <p>Лабораторные работы, самостоятельные работы, итоги</p>
+  <p>Работа с матрицами в системе компьютерной алгебры Maxima</p>
 </div>
 <div class="content">
+
   <div class="sub-section">
     <div class="section-title">Лабораторные работы</div>
-    <div class="empty-note">Материалы будут размещены после выполнения работ.</div>
+    <p style="font-size:14px;margin-bottom:1.2rem;">
+      Лабораторная работа выполнена в wxMaxima и состоит из четырёх файлов: действия с матрицами,
+      транспонирование, определитель и обратная матрица, матричные уравнения, ступенчатый вид, ранг,
+      удаление строк/столбцов и миноры.
+    </p>
+
+    <h2 style="font-size:14px;margin:1rem 0 0.4rem;color:var(--accent2);">Задание 4.1. Действия с матрицами. Матричный многочлен</h2>
+    <p style="font-size:14px;margin-bottom:0.4rem;">
+      Произведение матриц выполняется через точку (x.y); знак * даёт поэлементное произведение.
+      Квадрат и куб матрицы — это умножение матрицы на саму себя: x^^2, A.A.A (а x^2 возводит в степень
+      каждый элемент). При вычислении матричного многочлена степени заменяются произведениями через точку,
+      а свободный коэффициент умножается на единичную матрицу E.
+    </p>
+    <p style="font-size:14px;margin-bottom:1.2rem;">
+      <a href="https://drive.google.com/file/d/1hzlRT-RxZbFVn9sFTU9BlP9Ps475zJSY/view?usp=drive_link" target="_blank">Открыть задание 4.1</a>
+    </p>
+
+    <h2 style="font-size:14px;margin:1rem 0 0.4rem;color:var(--accent2);">Задание 4.2. Транспонирование. Определитель. Обратная матрица. Матричные уравнения</h2>
+    <p style="font-size:14px;margin-bottom:0.4rem;">
+      Транспонирование — функция transpose. Определитель — determinant; обратная матрица существует,
+      только если определитель не равен нулю. Обратную матрицу можно найти тремя способами: invert(M),
+      возведением в степень M^^(-1) и через меню Алгебра. Матричные уравнения решаются через обратную
+      матрицу (AX=B даёт X=A⁻¹B; XA=B даёт X=BA⁻¹; AXC=B даёт X=A⁻¹BC⁻¹), проверка — вычитанием.
+    </p>
+    <p style="font-size:14px;margin-bottom:1.2rem;">
+      <a href="https://drive.google.com/file/d/1Ep2Sw8EIx3Xy5S9c9K1s-zGn8l0dCKHW/view?usp=drive_link" target="_blank">Открыть задание 4.2</a>
+    </p>
+
+    <h2 style="font-size:14px;margin:1rem 0 0.4rem;color:var(--accent2);">Задание 4.3. Ступенчатый вид. Ранг матрицы</h2>
+    <p style="font-size:14px;margin-bottom:0.4rem;">
+      К ступенчатому виду матрица приводится двумя функциями: triangularize (не нормирует главную
+      диагональ) и echelon (нормирует, на диагонали единицы). Ранг находится командой rank и равен числу
+      ненулевых строк ступенчатой матрицы.
+    </p>
+    <p style="font-size:14px;margin-bottom:1.2rem;">
+      <a href="https://drive.google.com/file/d/1LtqF-wSE5T4oOD3R1SDyEQwVZLRSvlbB/view?usp=drive_link" target="_blank">Открыть задание 4.3</a>
+    </p>
+
+    <h2 style="font-size:14px;margin:1rem 0 0.4rem;color:var(--accent2);">Задание 4.4. Удаление строк/столбцов. Миноры</h2>
+    <p style="font-size:14px;margin-bottom:0.4rem;">
+      Удаление строк и столбцов — функция submatrix (числа до имени матрицы — удаляемые строки, после —
+      столбцы). Минор вычисляется функцией minor(M, i, j) — вычёркиваются i-я строка и j-й столбец.
+    </p>
+    <p style="font-size:14px;">
+      <a href="https://drive.google.com/file/d/1nEGlvrEnPiQhi6u5TSRNH53z7bGWjW5m/view?usp=drive_link" target="_blank">Открыть задание 4.4</a>
+    </p>
   </div>
+
   <div class="sub-section">
     <div class="section-title">Инвариантная самостоятельная работа</div>
     <div class="empty-note">Материалы будут размещены после выполнения работ.</div>
